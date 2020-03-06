@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Imperial Panda Board Games</title>
+    </head>
+
+    <script>
+        function moveCrowns() {
+        var crown = document.getElementById("Crown1");
+        var pos = -10;
+        var id = setInterval(updatePos, 15);
+
+        function updatePos() {
+            if (pos == 1) {
+                clearInterval(id);
+            } 
+            else {
+                pos++;
+                crown.style.left = pos + '%';
+            }
+        }
+
+        var crown2 = document.getElementById("Crown2");
+        var pos2 = -20;
+        var id2 = setInterval(updatePos2, 15);
+
+        function updatePos2() {
+            if (pos2 == 1) {
+                clearInterval(id2);
+            } 
+            else {
+                pos2++;
+                crown2.style.left = pos2 + '%';
+            }
+        }
+
+        var crown3 = document.getElementById("Crown3");
+        var pos3 = 130;
+        var id3 = setInterval(updatePos3, 15);
+
+        function updatePos3() {
+            if (pos3 == 91) {
+                clearInterval(id3);
+            } 
+            else {
+                pos3--;
+                crown3.style.left = pos3 + '%';
+            }
+        }
+
+        var crown4 = document.getElementById("Crown4");
+        var pos4 = 140;
+        var id4 = setInterval(updatePos4, 15);
+
+        function updatePos4() {
+            if (pos4 == 91) {
+                clearInterval(id4);
+            } 
+            else {
+                pos4--;
+                crown4.style.left = pos4 + '%';
+            }
+        }
+    }     
+    </script>
+    
+    <style>
+
+        body{
+            background-color:darkblue;
+        }
+
+        h1{
+            color:white;
+            background-color:black;
+            font-family:sans-serif;
+            text-align:center;
+            font-size:60px;
+        }
+
+        h2{
+            color: white;
+            background-color:black;
+            font-family:sans-serif;
+            text-align:center;
+            font-size:50px;
+        }
+
+        h3{
+            color:darkblue;
+            font-family:sans-serif;
+            text-align:center;
+            font-size:40px;
+        }
+
+        h4{
+            color:black;
+            font-family:sans-serif;
+            font-size:30px;
+            padding:1%;
+        }
+
+        img{
+            background-color:white;
+            float:left;
+            position:fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+        #ContentsDiv{
+            background-color:black;
+            position:fixed;
+            width:100%;
+            height:25%;
+            padding:5px;
+            top:0;
+            left:0;
+        }
+
+        p{
+            color:white;
+            font-size:24px;
+            font-style:italic;
+            background-color:rgb(0, 110, 255);
+            padding: 1%;
+        }
+
+        #BodyDiv{
+            position:relative;
+            left:10%;
+            top:200px;
+            width:80%;
+            margin-bottom:5%;
+            background-color:rgb(0, 110, 255);
+        }
+
+        a.MainContent{
+            float:left;
+            padding:25px;
+            background-color:white;
+            width:9%;
+            height:10%;
+            margin:1%;
+            position: relative;
+            left:21%;
+        }
+
+        .MainContent{
+            font-size:24px;
+        }
+
+        .SubContent{
+            font-size:18px;
+        }
+
+        #Crown1{
+            top:40%;
+        }
+
+        #Crown2{
+            top:75%;
+        }
+
+        #Crown3{
+            top:40%;
+        }
+
+        #Crown4{
+            top:75%;
+        }
+
+    </style>
+    
+    <body onload="moveCrowns()">
+        <div id="BodyDiv">
+        
+        <h1 id="BoardGames">Board Games</h1>
+
+        <h4>An old-fashioned kind of game. You have to actually interact with the physical world, can you believe it? Who'd have 
+            thought that was still a thing?
+        </h4>
+    
+        <h2 id="InDevelopmentBG">In Development</h2>
+
+        <h3>For Gold, Good, or Glory</h3>
+
+        <h4>Projected Completion Date: Unknown</h4>
+
+        <p>A new spin on the traditional tabletop RPG, this game began as an idea for an massively-multiplayer online video 
+            game and made its way into a board game. The flagship board game of Imperial Panda Games, this game is one of the biggest 
+            projects I've undertaken and incorporates a lot of experience and lessons learned across a slew of other games. It features
+            player-versus-player combat and player-versus-enemy combat for up to twenty players. Everyone can play; no Dungeon Master required!
+            A powerful yet easily understood number-based combat system and a slew of items and character custimization make for an engrossing experience. 
+            This game has enterred the playable Alpha stage of development but is far from complete. Even after completion, it will see several expansion options, 
+            including a playable storyline.
+        </p>
+
+        <h3>Fortica</h3>
+
+        <h4>Projected Completion Date: Unknown</h4>
+
+        <p>Do you love action, adventure, and <strong>Legos</strong>? Then you'll enjoy this game. Played on a custom board designed
+        and built by <strong>you</strong> using Legos, Fortica is a game of exploration and monster-fighting. Designed for
+        anyone from master builders to those aspiring to be, this game is not only a board game; it is a creative
+        opportunity. The only component of the game made by me is the rulebook: the rest is created by you! This game is currently fully playable, 
+        but no one except I can understand the rulebook, so I suppose I cannot yet call it complete.</p>
+
+        <h2 id="CompletedBG">Completed Games</h2>
+
+        <p>No games at this point. It is uncertain at the current point which games and ideas I will bring to completion, the 
+            most likely ones being <strong>Fortica</strong> and <strong>For Gold, Good, or Glory</strong>.
+            </p>
+
+        <h2 id="ReleasedBG">Released Games</h2>
+
+        <p>No games at this point. Most likely, the first release will be <strong>For Gold, Good, or Glory</strong>.</p>
+
+        <img src="C:\Users\andyf\Pictures\Crown.png" width=8% id="Crown1">
+        <img src="C:\Users\andyf\Pictures\Crown.png" width=8% id="Crown2">
+        <img src="C:\Users\andyf\Pictures\Crown.png" width=8% id="Crown3">
+        <img src="C:\Users\andyf\Pictures\Crown.png" width=8% id="Crown4">
+
+    </div>
+        
+    <div id="ContentsDiv">
+        <img src="C:\Users\andyf\Documents\Visual Studio 2017\Pentad Knights ABaaE v0.2\Pentad Knights ABaaE v0.2\Content\Imperial Panda Games Logo.png" width=300 alt="Imperial Panda Games Logo"><br><br>
+        <a href="C:\Users\andyf\Documents\imperialpandagameswebsite.html" class="MainContent">Home</a>
+        <a href="C:\Users\andyf\Documents\newspage.html" class="MainContent">News</a>
+        <a href="C:\Users\andyf\Documents\videogamespage.html" class="MainContent">Video Games</a>
+        <a href="C:\Users\andyf\Documents\boardgamespage.html" class="MainContent">Board Games</a>
+        <a href="C:\Users\andyf\Documents\cardgamespage.html" class="MainContent">Card Games</a>
+    </div>
+    </body>
+</html>
